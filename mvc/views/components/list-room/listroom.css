@@ -1,0 +1,76 @@
+.list--room{
+    background-color: #fff;
+}
+
+.list--room__image{
+    height: 600px;
+}
+
+.list--room__image img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.list--room__content{
+    color: #000;
+    padding: 2rem 0;
+}
+
+.list--room__content__layout{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.list--room__content__layout__filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.list--room__content__layout__filter__input{
+   
+}
+
+.list--room__content__layout__filter__submit{
+    flex: 1;
+    text-align: end;
+}
+
+.list--room__content__layout__filter__submit > button{
+    background-color: blue;
+    padding: 8px 22px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.list--room__content__layout__filter__input > input{
+    width: 400px;
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+
+.list--room__content__layout__filter__option{
+    display: flex;
+}
+
+.list--room__content__layout__filter__option > div {
+    margin-left: 1rem;
+} 
+
+.list--room__content__layout__rooms{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.list--room__content__layout__rooms > li{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

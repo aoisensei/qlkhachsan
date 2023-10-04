@@ -1,0 +1,23 @@
+.container {
+    padding: 1.25rem;
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+  }
+  .colu {
+    padding: 10px;
+  }
+  
+  .bill-input {
+    width: 100%;
+    min-width: 200px;
+  }
+  
+  .btns {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn-bill {
+    margin-left: 10px;
+  }

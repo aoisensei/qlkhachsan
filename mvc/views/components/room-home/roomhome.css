@@ -1,0 +1,30 @@
+.home--room{
+    background-image: url("https://thuthuatnhanh.com/wp-content/uploads/2020/01/anh-bau-troi-xanh-lam-background-powerpoint.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.home__room{
+    max-width: 1200px;
+}
+
+.home__room > h1{
+    text-align: center;
+    color: #fff;
+}
+
+.home__room > span{
+    color: #fff;
+    display: block;
+    margin: 2rem 0;
+}
+
+.home__room__items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}

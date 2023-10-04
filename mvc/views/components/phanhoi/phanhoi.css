@@ -1,0 +1,42 @@
+:root {
+    --main-color: #dd2f6e;
+    --color-dark: #1d2231;
+    --text-grey: #8390A2;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.wrap-form {
+    width: 60%;
+    margin: 100px auto;
+}
+
+.label-ph {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.btn-primary {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 45%;
+}
+
+.wrap-text {
+    text-align: center;
+}
+
+.text-area {
+    resize: none; 
+}

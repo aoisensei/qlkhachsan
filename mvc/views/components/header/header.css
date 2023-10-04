@@ -1,0 +1,208 @@
+/*Thêm active vào header và home*/
+
+.header{
+   width: 100%;
+   display: flex;
+   z-index: 1000;
+   justify-content: center;
+   align-items: center;
+   height: 8rem;
+   transition: background-color 0.5s ease-in, height 0.5s ease-in;
+}
+
+.header.active{
+   position: fixed;
+   background-color: rgb(50, 51, 51);
+   opacity: 0.9;
+   height: 5rem;
+   color: #fff;
+}
+
+/* .header.active .header__content__link .header__content__link__items > li > a,
+.header.active .header__content__account a{
+   color: #fff;
+} */
+
+.header__content{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* width: 1200px; */
+   max-width: 1200px;
+}
+
+.header__content__logo{
+   width: 10%;
+}
+
+.header__content__logo > a > img{
+   width: 100%;
+   border-radius: 10px;
+}
+
+.header__content__link{
+   flex: 1;
+}
+
+.header__content__link__items{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 5rem;
+}
+
+.header__content__link__items__item{
+   position: relative;
+}
+
+.header__content__link__items__item::after{
+   content: "";
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 0%;
+   bottom: 0;
+   padding: 1px 0;
+   background-color: rgb(41, 41, 246);
+   transition: width 0.5s ease;
+}
+
+.header__content__link__items__item.active > a{
+   color: blue;
+}
+
+.header__content__link__items__item.active::after{
+   width: 100%;
+}
+
+.header__content__link__items__item:hover:after{
+   width: 100%;
+}
+
+.header__content__link__items__item > a{
+   font-weight: 600;
+}
+
+.header__content__account{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.header__content__account.active > div {
+   display: none;
+}
+
+.header__content__account.active .header__content__account__user{
+   display: flex;
+}
+
+.header__content__account > div ~ *{
+   margin-left: 1rem;
+}
+
+.header__content__account__user{
+   display: none;
+   /* display: flex; */
+   justify-content: center;
+   align-items: center;
+}
+
+.header__content__account__user > i{
+   font-size: 30px;
+   margin-right: 8px;
+}
+
+.header__content__setting{
+   margin-left: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.header__content__setting.active::before{
+   display: block;
+}
+
+.header__content__setting::before{
+   display: none;
+   position: absolute;
+   content: "";
+   bottom: -50%;
+   right: 0;
+   left: -2px;
+   border-width: 0px;
+   border-style: solid;
+   border-color: transparent transparent rgb(255, 255, 255) transparent;
+}
+
+.header__content__setting__icon{
+   cursor: pointer;
+   font-size: 1.2rem;
+   transform: rotateX(0deg);
+   transition: transform 0.5s ease;
+   color: #fff;
+}
+
+.header__content__setting:hover .header__content__setting__icon{
+   transform: rotate(-45deg);
+}
+
+.header__content__setting:hover::before{
+   border-width: 12px;
+   transition: border-width 0.6s ease-in;
+}
+
+.header__content__setting:hover .header__content__setting__dropdown{
+   width: 180px;
+   opacity: 1;
+   padding: 1rem 2rem;
+   transition: width 0.6s ease-in, opacity 1s ease-in;
+}
+
+.header__content__setting:hover .header__content__setting__dropdown > li{
+   display: block;
+}
+
+.header__content__setting:hover .header__content__setting__dropdown .header__content__setting__dropdown__admin{
+   display: none;
+}
+
+.header__content__setting:hover .header__content__setting__dropdown .header__content__setting__dropdown__admin.active{
+   display: block;
+}
+
+.header__content__setting.active .header__content__setting__dropdown{
+   display: block;
+}
+
+.header__content__setting__dropdown{
+   display: none;
+   opacity: 0;
+   position: absolute;
+   top: 150%;
+   right: -12px;
+   width: 0px;
+   background-color: #fff;
+   box-shadow: 0px 0px 5px 1px rgb(125, 124, 124);
+   border-radius: 10px;
+   z-index: 999;
+}
+
+.header__content__setting__dropdown > li {
+   display: none;
+   padding: 12px 0;
+}
+
+.header__content__setting__dropdown > li :hover{
+   color: blue;
+}
+
+.header__content__setting__dropdown > li > a{
+   display: block;
+}
+
+.home.active{
+   padding-top: 5rem;
+}
